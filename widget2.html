@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Widget2</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!--  ===== CSS Files =====  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--  ===== Font =====  -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	 <!--  ====  JS Files ====  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+		<div class="container">
+			<div class="row row-centered">
+			<!--==== Widget Begin====-->
+				<div class="col-md-4 col-centered ">
+				  <!--==== Widget Header Menu Begin====-->
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-6  center-align nav-style"  onclick="showDeck('profile-block')" id="nav1">
+						    <span class="glyphicon glyphicon-user" ></span>
+							<span>MY PROFILE</span>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6 center-align nav-style"  onclick="showDeck('edit-block')" id="nav2">
+							 <span class="glyphicon glyphicon-pencil" ></span>
+							<span>EDIT</span>
+						</div>
+					</div>
+					<!--==== Widget Header Menu End====-->
+					<!--==== Widget content Begin====-->
+					<div class="row">
+						<div class=" col-md-6 col-xs-6 col-sm-6 nav-content" id="profile-block"  style="float:left">
+							<div class= "center-align" >
+								<a href="#">Invite Friends</a><br>
+								<a href="#">Find Friends</a><br>
+								<a href="#">Log out</a>
+
+							</div>
+							
+						</div>
+						<div class="col-md-6 col-xs-6 col-sm-6 nav-content" id="edit-block"  style="display:none;float:right">
+							<div class="center-align" >
+								<a href="#">View Contacts</a><br>
+								<a href="#">Edit Contacts</a><br>
+								<a href="#">Delete Contacts</a>
+							</div>
+							
+						</div>
+						
+					</div>	
+					<!--==== Widget Content Menu Begin====-->
+					
+				</div>
+			</div>
+			<!--==== Widget End====-->
+		</div>
+<script>
+function showDeck(id){
+	document.getElementById("profile-block").style.display = "none";
+	document.getElementById("edit-block").style.display = "none";
+	
+	var ele = document.getElementById(id);
+	ele.style.display = "block";
+	
+	/*=== Active menu ===*/
+	if(id == "profile-block"){document.getElementById('nav1').style.borderBottom = "3px solid green";
+	document.getElementById('nav2').style.borderBottom = "#fff";}
+	
+	if(id == "edit-block"){document.getElementById('nav2').style.borderBottom = "3px solid green";
+	document.getElementById('nav1').style.borderBottom = "#fff";}
+	
+
+}
+</script>		
+</body>
+</html>

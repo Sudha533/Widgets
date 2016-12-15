@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Widget1</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!--  ===== CSS Files =====  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	 <!--  ====  JS Files ====  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+		<div class="container">
+		<!--==== Widget Begin====-->
+			<div class="row row-centered">
+								
+				<div class="col-md-4 col-sm-4  col-centered content-box">
+				<!--==== Widget Header Begin====-->	
+						<div class="row">
+							<div class="col-md-12 col-sm-12 " style="padding:3%">
+								<div class="dropdown-main"  style="float:right">
+								<span class="glyphicon glyphicon-option-vertical dropdown-btn"></span>
+								<div class="dropdown-content">
+								<a href="#">View Contact</a>
+								<a href="#">Media</a>
+								<a href="#">More</a>
+								</div>
+								</div>
+								<div class="media">
+									<div class="media-left" id="timer" value="0">
+									<img src="images/sudha.jpg" class="media-object img-circle" style="width:60px" alt="Sudha" id="profile-img">
+									</div>
+									<div class="media-body" style="padding-top:3%">
+									<h5 class="media-heading" style="color:#000">Sudha Subramaniam</h5>
+									<p style="font-size:13px;">15m Followers</p>
+								</div>
+								</div>
+						    </div>
+						</div>
+						<!--==== Widget Header End====-->
+						<!--==== Widget Menu1 Begin====-->	
+						<div class="row bg-info menu-style"  onclick="showContent('user-detail')" style="padding:11px;margin-top:5px;border-bottom:solid 1px #fff;">
+							<div class="col-md-12 col-sm-12 " style="padding-left:5%">
+								<span style="float:left">Edit User</span>
+								<span style="float:right" class="glyphicon glyphicon-user"></span>
+								
+							</div>
+						</div>
+						<!--  ==== Expanding the menu Edit user ==== -->
+						<div class="row menu-content"  id="user-detail">
+							
+							<div class="col-md-12 col-sm-12 " style="padding:4px;cursor:pointer;"><span style="font-size:12px;">Status</span>
+							<span class="corper" ><img src="images/bar.jpg"/></span></div>
+							<div class="col-md-12 col-sm-12 " style="padding:4px;cursor:pointer;"><span  style="font-size:12px;">Invites</span><span class="corper"><img src="images/bar.jpg"/></span></div>
+							
+						</div>
+						<!-- ==== End Edit user menu====--> 
+						<!--==== Widget Menu2 Begin====-->
+						<div class="row bg-info menu-style" onclick="showContent('web-statistics')"style="padding:11px;border-bottom:solid 1px #fff;">
+							<div class="col-md-12 col-sm-12" style="padding-left:5%" >
+								<div>
+								<span style="float:left">Web statistics</span>
+								<span style="float:right" class="glyphicon glyphicon-stats"></span>
+								</div>
+						    </div>
+						</div>
+						
+					    <!--  ==== Expanding the menu Web statistics ==== -->
+						<div class="row menu-content"  id="web-statistics">
+							<div class="col-md-12 col-sm-12">Click here to see <a href="#">Web statistics</a></div>
+						</div>
+						<!-- ==== End Web statistics menu====--> 
+						<!--==== Widget Menu3 Begin====-->
+						<div class="row bg-info menu-style" onclick="showContent('upload-settings')" style="padding:11px;border-bottom:solid 1px #fff;">
+							<div class="col-md-12 col-sm-12" style="padding-left:5%">
+								<span style="float:left">Upload settings</span>
+								<span style="float:right" class="glyphicon glyphicon-wrench"></span>
+						    </div>
+						</div>
+						<!--  ==== Expanding the menu Upload settings ==== -->
+						<div class="row menu-content"  id="upload-settings">
+							
+							<div class="col-md-12 col-sm-12 " style="padding:4px;cursor:pointer;"><span  style="font-size:12px;">Security</span><span class="corper"><img src="images/bar.jpg" /></span></div>
+							
+							<div class="col-md-12 col-sm-12 " style="padding:4px;cursor:pointer;"><span  style="font-size:12px;">Account</span><span class="corper"><img src="images/bar.jpg"/></span></div>
+						</div>
+						<!-- ==== End Upload settings menu====--> 
+						<!--==== Widget Menu4 Begin====-->
+						<div class="row bg-info menu-style" style="padding:11px;" onclick="showContent('events')">
+							<div class="col-md-12 col-sm-12 " style="padding-left:5%">
+								<span style="float:left">Events</span>
+								<span style="float:right"  class="glyphicon glyphicon-map-marker"></span>
+							</div>
+						</div>
+						<!--  ==== Expanding the menu events ==== -->
+						<div class="row menu-content"  id="events">
+							<div class="col-md-12 col-sm-12">Click here to see <a href="#">events</a></div>
+						</div>
+						<!-- ==== End events menu====--> 
+					
+				</div>
+				
+			</div><!--==== Widget End====-->
+		</div>
+		<script src="js/script.js"></script>
+</body>
+</html>
